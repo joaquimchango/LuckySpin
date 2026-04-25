@@ -219,7 +219,9 @@ width:100%
 #result-container{
   width: 100%;
   display: flex;
-  justify-content: end;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content:end
 
 }
 

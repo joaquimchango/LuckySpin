@@ -146,7 +146,7 @@ gameOver(){
 endGame(score ){
   this.gameScreen.style.display = "none"
   this.gameEndScreen.style.display = "flex"
-  this.finalScore.innerText = `${score}`
+  this.finalScore.innerText = `${score}$`
 
   setTimeout(() => {
     const title = document.querySelector("#game-end-screen>.title")

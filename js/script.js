@@ -61,12 +61,12 @@ setTimeout(() =>{
 
 
   score.totalGain += score.betAmount
-  game.scoreboard.innerText = `${score.totalGain}`
+  game.scoreboard.innerText = `$${score.totalGain}`
   
 
   score.calculateJackpot(true, score.betAmount, 10)
   score.addBalance()
-  recentGains.innerText = `${score.recentGains}$`
+  recentGains.innerText = `+${score.recentGains}$`
 
 }, 2000);
 
