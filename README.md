@@ -1,0 +1,2 @@
+# LuckySpin
+New repo
