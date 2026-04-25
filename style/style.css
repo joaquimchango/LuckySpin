@@ -1,0 +1,424 @@
+/* Your CSS styles here */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  background-color: #120B1A;
+  color: #fff;
+  height:100%
+}
+
+
+main{  display:block;
+  height: 100vh;
+  position: relative
+}
+
+h1 {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+
+p{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+label{
+
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+button{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+#game-logo{
+  width: 50px;
+  height: 50px;
+}
+
+#top-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(18, 11, 26, 0.7);
+  box-shadow: 0px 2px 25px #b06bc442;
+  border-radius: 0 0 10px 10px;
+  z-index: 999;
+  position: absolute;
+  top:1px
+}
+
+#start-game-btn {
+  background-color:#CE64E8;
+  color: #120B1A;
+
+}
+
+#buy-spins-btn {
+  background-color: #FFD700;
+  color: #FFF;
+  width:auto;
+}
+
+#game-intro {
+  display: block;
+  background-image: url("../images/casino-floor.png");
+  background-size: cover;
+  backdrop-filter: blur(20px);
+  height: 100%;
+}
+
+#game-container {
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+ width: 100%;
+  height:auto;
+  background-color: rgba(18, 11, 26, 0.603);
+  height:100%;
+  padding-top:100px
+}
+
+#welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#game-screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/casino-bg.png);
+  background-size: cover;
+
+ height:100%
+
+}
+
+#game-end-screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 33vh;
+}
+
+#scoreboard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:50px;
+  max-width:400px;
+  margin: 30px auto 40px;
+  padding: 20px;
+  background-color: rgba(18, 11, 26, 0.79);
+
+  box-shadow: 0px 1px 1px #00E5FF;
+  border-radius: 20px;
+  z-index: 999;
+
+ }
+
+#spin-machine {
+ padding: 40px;
+ background-color: rgb(25, 15, 36);
+  border-radius: 25px;
+  min-width: 600px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#slots-container{
+  display: flex;
+  background-color: black;
+  height: 400px;
+  border:30px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  overflow:hidden;
+
+}
+
+
+
+.avatar{
+  border: 2px solide #FFD700;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+}
+
+.profile{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap:10px;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.2rem;
+}
+.balance{
+  width:100%;
+  display:flex;
+  align-items: center;
+  
+}
+.left-controls{
+display: block;
+width:100%
+}
+.helper-text{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+
+#controls{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#qty-controls{
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  width: 100px;
+  font-size: 2em
+}
+
+#result-container{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+}
+
+#spin-btn{
+  width:200px;
+border-radius:50px;
+background-color: rgb(142, 36, 170);
+height: 95px;
+border:5px solid  rgb(123, 31, 162);
+cursor: pointer
+}
+
+
+#increment{
+  cursor: pointer;
+}
+
+#decrement{
+  cursor: pointer;
+}
+
+#winning-amount{
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Jakarta Sans', sans-serif;
+}
+
+.title{
+   font-family: 'Epilogue', sans-serif;
+font-size: 6rem;
+font-style:italic;
+font-weight: 900;
+line-height: 3rem;
+text-align:center;
+
+}
+
+.ending-text{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0 0 40px;
+  color:#fff
+}
+
+.animated-text{
+ 
+  transition: transform 1s ease-in-out;
+  transform: scale(0.8);
+
+}
+
+.accent, .title span{
+  color: #FFD700;
+  font-style:italic;
+
+}
+
+.initial .title {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.qty-btn{
+  align-self: center;
+}
+
+
+#overlay{
+  display:none;
+  position: fixed;
+  padding-top: 33vh;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 15, 36, 0.842);
+  z-index: 9999;
+}
+
+#overlay.active .animated-text {
+  transform: scale(0.8);
+   transition: transform 1s ease-in-out;
+}
+
+
+ .slots {
+  width: 100%;
+  height: auto;
+  font-size: 100%;
+  text-align: center;
+  border-radius: 12px;
+  background: #111;
+  display: grid;
+
+  justify-self: center;
+  transform-style: preserve-3d;
+  margin: 0 2px;
+  perspective: 800px;
+   background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.185));
+   
+}
+
+.slot-inner{
+  display: flex;
+  width: 100%;
+  height:auto;
+  align-items:center;
+  flex-direction: row;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); /* bounce */
+  
+}
+/* Example styles for the buttons */
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.disabled{
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.symbol{
+  display: block;
+  width: 100%;
+  height: auto
+}
+
+.initial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 500px;
+}
+
+/* Example styles for the score display */
+#score {
+  margin: 10px 0 0;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #FFD700;
+  
+}
+
+#gains{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00E5FF;
+  margin: 10px 0 0;
+}
+
+.spin {
+  animation: spin 0.2s linear infinite ;
+  filter: blur(2px);
+
+  
+}
+
+.amount{
+  font-weight: 800;
+  font-size: 1.5rem;
+  font-family: 'Epilogue', sans-serif;
+  color: #FFF
+}
+
+#bet-amount{
+  font-weight: 800;
+  font-size: 1.5rem;
+  justify-content: center;
+  font-family: 'Epilogue', sans-serif;
+  color: #FFD700;
+  
+}
+
+@keyframes spin {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+  
+
+@keyframes stop {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0%); }
+
+  
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lucky Spin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.1.0/dist/confetti.min.js"></script>
+
+</head>
+
+<body>
+
+ 
+  <main>
+    <div id="top-nav">
+      <div class="profile">
+      <div class="avatar"><img src="images/avatar.png" alt="Lucky Spin Logo" id="game-logo"></div>
+      <div class="username">Player1</div>  
+      </div>
+      <div class="settings"><label>Tokens left: </label><span id="spins-left">3</span>
+      </div>
+    </div>
+
+    <div id="game-intro">
+      <div id="game-container">
+        <div id="welcome-screen">
+          <div class="label-btn"></div>
+          <h1 class="title">LUCKY <span>SPIN</span></h1>
+          <p class="introduction">Experience the adrenaline of high-stakes luxury casino games. Your seat at the Diamond table is waiting for you!</p>
+          <button id="start-game-btn">Start Game</button>
+        </div>
+      </div>
+    </div>
+    <div id="game-screen">
+      <div id="overlay">
+        <div class="title" ><span>YOU LOST!</span>
+        <p class="ending-text">Better luck next time! <br>Try again to win big!</p>
+        </div>
+        <button id="exit-btn">Exit</button>
+        <button id="retry-btn">Try Again</button>
+      </div>
+      <div id="game-container">
+        <div id="scoreboard">
+          <div> 
+          <label>Current jackpot</label>
+          <div id="score">$0</div>
+          </div>
+          <div>
+          <label>Recent win</label>
+          <div>Player1</div>
+          <div id="gains">+$0</div>
+          </div>
+        </div>
+          <div id ="spin-machine">
+              <div id="slots-container">
+
+              <div class="slot-inner">
+                <div class="slots ">
+                  <div class="initial"> <div class="title">LUCKY <span>SPIN</span></div> </div>
+                </div>
+                <div class="slots">
+                  <div class="initial">
+                     <div class="title">LUCKY <span>SPIN</span>
+                     </div> 
+                </div>
+                </div>
+                <div class="slots">
+                  <div class="initial"> <div class="title">LUCKY <span>SPIN</span></div> </div>
+                </div>
+              </div>
+              <!-- Wheel segments will be generated here -->
+              <div class="segment"></div>
+              </div>
+
+            <div id="controls">
+                <div class="left-controls">
+                  <div class="balance">
+                  <label>Balance:</label>
+                  <div><span id="balance" class="amount">0</span></div>
+                  </div>
+                  <button id="buy-spins-btn">Buy more Spins</button>
+                  <div class="helper-text">Each spins costs 100€</div>
+                </div>
+                <button id="spin-btn">Spin</button>
+                <div id="result-container">
+                  <label></label>
+                  <div id="qty-controls">
+                      <div id="decrement" class="qty-btn">-</div>
+                      <div id="bet-amount" class="balance">0</div>
+                      <div id="increment" class="qty-btn">+</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+      </div>
+       
+    </div>
+
+
+    <div id="game-end-screen">
+      <div class="title" >YOU WON 
+        <p><span id="winning-amount">0</span></p>
+      </div>
+      <div class="ending-text"> Claim your winnings and try again for even bigger prizes!</div>
+      <button id="play-again-btn">Play Again</button>
+    </div>
+  </main>
+
+
+  <!-- Your HTML elements here -->
+
+  <script src="js/game.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/score.js"></script>
+  
+</body>
+
+</html>
